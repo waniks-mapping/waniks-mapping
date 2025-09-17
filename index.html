@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waniks.mapping - Geography & History Maps</title>
+    <meta name="description" content="High-quality mapping content about geography, history, and geopolitics. Created by waniks.mapping.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="nav-brand">waniks.mapping</a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#maps">Maps</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Geography & History<br><span class="accent-text">Through Maps</span></h1>
+                <p>Welcome to waniks.mapping - your source for educational mapping content about geopolitics, historical events, and geographical analysis. Explore, learn, and download.</p>
+                <div class="hero-buttons">
+                    <a href="#maps" class="btn btn-primary"><i class="fas fa-map"></i> Explore Maps</a>
+                    <a href="*YOUR LINK (YT)*" target="_blank" class="btn btn-secondary"><i class="fab fa-youtube"></i> YouTube Channel</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <div class="filters-container">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Maps</button>
+                <button class="filter-btn" data-filter="geopolitics">Geopolitics</button>
+                <button class="filter-btn" data-filter="historical">Historical</button>
+                <button class="filter-btn" data-filter="geographical">Geographical</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="map-search" placeholder="Search maps...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Maps Gallery Section -->
+    <section id="maps" class="maps">
+        <div class="container">
+            <h2>Mapping Content</h2>
+            <p class="section-subtitle">Download high-quality maps for educational purposes</p>
+
+            <div class="maps-grid">
+                <!-- Map Item 1 -->
+                <div class="map-item" data-category="geopolitics" data-date="2023-11-15" data-size="5.2 MB">
+                    <div class="map-item-image">
+                        <img src="assets/images/maps/*FILE NAME 1*.png" alt="Map: *NAME OF MAP 1*">
+                    </div>
+                    <div class="map-item-content">
+                        <h3>*NAME OF MAP 1*</h3>
+                        <p>*SHORT DESCRIPTION 1*</p>
+                        <a href="assets/downloads/*FILE NAME 1*.zip" class="btn btn-download" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map Item 2 -->
+                <div class="map-item" data-category="historical" data-date="2023-10-20" data-size="4.8 MB">
+                    <div class="map-item-image">
+                        <img src="assets/images/maps/*FILE NAME 2*.png" alt="Map: *NAME OF MAP 2*">
+                    </div>
+                    <div class="map-item-content">
+                        <h3>*NAME OF MAP 2*</h3>
+                        <p>*SHORT DESCRIPTION 2*</p>
+                        <a href="assets/downloads/*FILE NAME 2*.zip" class="btn btn-download" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add more map items following the same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Map Details -->
+    <div id="map-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-meta">
+                        <span class="modal-date"><i class="far fa-calendar"></i> Published: <span id="modal-date"></span></span>
+                        <span class="modal-size"><i class="far fa-file-archive"></i> Size: <span id="modal-size"></span></span>
+                    </div>
+                    <a href="#" id="modal-download" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Full Resolution
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span class="counter" data-target="15">0</span>
+                    <p>Maps Created</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-download"></i>
+                    <span class="counter" data-target="2500">0</span>
+                    <p>Total Downloads</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-globe-americas"></i>
+                    <span class="counter" data-target="42">0</span>
+                    <p>Countries Covered</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="counter" data-target="10000">0</span>
+                    <p>Community Members</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About waniks.mapping</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I create educational mapping content that explores geography, history, and geopolitics. My goal is to make complex topics accessible and engaging through visual storytelling with maps.</p>
+                    <p>All content is available for free download to help students, educators, and geography enthusiasts in their learning journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get notified about new maps and exclusive content</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links & Footer Section -->
+    <section id="links" class="links">
+        <div class="container">
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <a href="*YOUR LINK (YT)*" target="_blank" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="*YOUR LINK (TG)*" target="_blank" class="social-link">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="*YOUR LINK (INST)*" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 waniks.mapping. All maps are available for educational use.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
